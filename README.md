@@ -8,7 +8,7 @@ So to use:
 
 1. Install PHP Debug extension in your VS Code
 2. Create a `code` folder in the root and add code (e.g. `test.php` - see below). Set a breakpoint somewhere.
-3. Press F5 to launch the debugger which will start listening on port 9000 for a connection from the container.
+3. Press F5 to launch the debugger which will start listening on port 9000 for a connection from the container. The first time round, the PHP Debug extension will take a moment to activate - watch for the status bar message at the bottom indicating the plugin is listening. ![Debugger Ready](./images/debugger-ready.png)
 4. Run docker-compose up to deploy and start the container, which bind mounts the code folder to the /var/html/www folder.
 5. Navigate to `http://localhost:8080/test.php` and observe the breakpoint is hit in VS Code.
 
