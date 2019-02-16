@@ -27,3 +27,7 @@ A sample PHP script to test the debugger:
     echo "Hello, World!"
 
 Drop this as `test.php` in the code folder and set a breakpoint (F9) on the `echo` line. When you hit `http://localhost:8080/test.php` the breakpoint should be hit.
+
+## phpMyAdmin and MariaDB Database
+
+In addition to the PHP Apache container, the docker-compose also creates a phpMyAdmin instance at `http://localhost:8081` and a mariadb database called "db". The default username and password are "root" and "rootpassword".
